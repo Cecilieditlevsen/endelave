@@ -21,7 +21,7 @@ export const CalendarGrid = ({ state, startDate, ...props }: GridProps) => {
       <thead {...headerProps}>
         <tr>
           {weekDays.map((day, index) => (
-            <th className={tw`text-center box-content h-[40px] w-[40px] py-[4px] relative`} key={index}>{day}</th>
+            <th className={tw`text-center box-content h-[40px] w-[40px] relative`} key={index}>{day}</th>
           ))}
         </tr>
       </thead>

@@ -44,7 +44,7 @@ export const CalendarCell = ({
   return (
     <td
       {...cellProps}
-      className={tw`text-center rounded-full box-content h-[40px] py-[4px] w-[40px] relative cursor-default`}
+      className={tw`text-center rounded-full box-content h-[40px] w-[40px] relative cursor-default`}
     >
       <span
         {...mergeProps(hoverProps, buttonProps)}
@@ -52,7 +52,7 @@ export const CalendarCell = ({
         hidden={isOutsideVisibleRange}
         className={tw`box-border h-[40px] outline-none w-full my-[4px] rounded-full whitespace-nowrap block absolute top-0 left-0 text-center after::${content(
           "''"
-        )} after::(absolute rounded-full top-[calc(50% - 20px)] left-[calc(50% - 20px)] transition-all duration-150 w-[40px] h-[40px] bwlock whitespace-nowrap)
+        )} after::(absolute rounded-full top-[calc(50% - 20px)] left-[calc(50% - 20px)] transition-all duration-150 w-[40px] h-[40px] block whitespace-nowrap)
         ${clsx({
           'text-gray-200': isDisabled,
           'after::(bg-blue-500) text-white': isSelected,

@@ -6,7 +6,7 @@ import { css } from 'twind/css'
  * Setup Twind
  */
 setup({
-  preflight: false,
+  preflight: true,
   hash: true,
   theme: {
     extend: {
@@ -25,5 +25,11 @@ setup({
 })
 
 export const App = () => {
-  return <FerryComponent />
+  return (
+    <div className={tw`w-full py-12`}>
+      <div className={tw`max-w-[1400px] mx-auto px-4`}>
+        <FerryComponent />
+      </div>
+    </div>
+  )
 }
