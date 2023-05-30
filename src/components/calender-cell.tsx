@@ -64,11 +64,11 @@ export const CalendarCell = ({
         })}
         `}
       >
-        <span
-          className={tw`mr-[4px] ml-auto w-[40px] h-[40px] flex rounded-full items-center justify-center`}
+        <div
+          className={tw` w-[40px] h-[40px] flex rounded-full items-center justify-center`}
         >
           <span className={tw`z-10`}>{date.day}</span>
-        </span>
+        </div>
       </span>
     </td>
   )
