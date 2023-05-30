@@ -6,7 +6,7 @@ This project addresses the specific needs for a commune, which sought to enhance
 
 ## Project overview
 
-The primary task involved building a web-accessible React component that would seamlessly integrate within an existing vanilla JavaScript project. This component was specifically developed to address the unique requirements of Horsens Municipality, which sought to enhance their platform by incorporating an interactive ferry schedule overview between Endelave and Snaptun.
+The primary task involved building a web-accessible React component that would seamlessly integrate within an existing vanilla JavaScript project. This component was specifically developed to address the unique requirements of a commune, which sought to enhance their platform by incorporating an interactive ferry schedule overview between Endelave and Snaptun.
 
 The objective was to create a highly functional React component that can be embedded within the larger vanilla JavaScript project, allowing for a seamless integration between the two technologies. The React component serves as a self-contained module responsible for displaying an interactive date picker and retrieving and presenting the ferry departure information for the Endelave-Snaptun and Snaptun-Endelave routes on the specified day.
 
