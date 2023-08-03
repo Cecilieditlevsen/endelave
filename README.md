@@ -4,6 +4,8 @@
 
 This project addresses the specific needs for a commune, which sought to enhance their platform by incorporating an interactive ferry schedule overview between Endelave and Snaptun. The objective was to develop a highly functional and seamlessly integrated React component.
 
+
+Live Demo: https://joblist-nine.vercel.app/?category=all 
 ## Project overview
 
 The primary task involved building a web-accessible React component that would seamlessly integrate within an existing vanilla JavaScript project. This component was specifically developed to address the unique requirements of a commune, which sought to enhance their platform by incorporating an interactive ferry schedule overview between Endelave and Snaptun.
@@ -13,6 +15,8 @@ The objective was to create a highly functional React component that can be embe
 To ensure consistency and alignment with the design system of the vanilla JavaScript project, the React component's styles were carefully developed using the css-in-js tool Twind. By referencing shared variable names and omitting the inclusion of a preflight (CSS normalize), the component's styles integrate seamlessly with the existing styles of the vanilla JavaScript project.
 
 The React component was implemented using React Aria to ensure web accessibility and adherence to accessibility best practices, providing an inclusive user experience.
+
+
 
 
 
