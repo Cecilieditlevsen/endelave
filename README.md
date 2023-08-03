@@ -5,7 +5,7 @@
 This project addresses the specific needs for a commune, which sought to enhance their platform by incorporating an interactive ferry schedule overview between Endelave and Snaptun. The objective was to develop a highly functional and seamlessly integrated React component.
 
 
-Live Demo: https://joblist-nine.vercel.app/?category=all 
+Live Demo: https://ferry-departures.vercel.app/ 
 ## Project overview
 
 The primary task involved building a web-accessible React component that would seamlessly integrate within an existing vanilla JavaScript project. This component was specifically developed to address the unique requirements of a commune, which sought to enhance their platform by incorporating an interactive ferry schedule overview between Endelave and Snaptun.
