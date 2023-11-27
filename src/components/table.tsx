@@ -1,11 +1,10 @@
-import { tw } from 'twind'
-import { CarIcon } from './icons/car-icon'
-import { PersonIcon } from './icons/person-icon'
-import { FerryRouteModel } from '../modules/ferry-departues/models/departure/departure.model'
+import {tw} from 'twind'
+import {CarIcon} from './icons/car-icon'
+import {PersonIcon} from './icons/person-icon'
+import {FerryRouteModel} from '../modules/ferry-departues/models/departure/departure.model'
 import clsx from 'clsx'
-import { ArrowRight } from './icons/arrow-right'
 
-export const Table = ({ departures, isDirectionHome }: FerryRouteModel) => {
+export const Table = ({ departures }: FerryRouteModel) => {
   return (
     <table
       className={tw`table-fixed w-full max-w-[358px] md:min-w-[370px] md:max-w-full border-spacing-0 border-collapse`}

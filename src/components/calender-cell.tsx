@@ -1,15 +1,10 @@
-import {
-  AriaCalendarCellProps,
-  mergeProps,
-  useCalendarCell,
-  useHover,
-} from 'react-aria'
-import { CalendarState } from 'react-stately'
-import React, { useRef } from 'react'
-import { tw } from 'twind'
+import {AriaCalendarCellProps, mergeProps, useCalendarCell, useHover,} from 'react-aria'
+import {CalendarState} from 'react-stately'
+import React, {useRef} from 'react'
+import {tw} from 'twind'
 import clsx from 'clsx'
-import { CalendarDate, isSameMonth, isToday } from '@internationalized/date'
-import { content } from '@twind/content'
+import {CalendarDate, isSameMonth, isToday} from '@internationalized/date'
+import {content} from '@twind/content'
 
 type CellProps = AriaCalendarCellProps & {
   state: CalendarState
@@ -50,7 +45,7 @@ export const CalendarCell = ({
         {...mergeProps(hoverProps, buttonProps)}
         ref={ref}
         hidden={isOutsideVisibleRange}
-        className={tw`box-border h-[40px] outline-none w-full my-[4px] rounded-full whitespace-nowrap block absolute top-0 left-0 text-center after::${content(
+        className={tw`box-border h-[40px] w-[40px] outline-none w-full my-[4px] rounded-full whitespace-nowrap block absolute top-0 left-0 text-center after::${content(
           "''"
         )} after::(absolute rounded-full top-[calc(50% - 20px)] left-[calc(50% - 20px)] transition-all duration-150 w-[40px] h-[40px] block whitespace-nowrap)
         ${clsx({
@@ -67,7 +62,7 @@ export const CalendarCell = ({
         <div
           className={tw` w-[40px] h-[40px] flex rounded-full items-center justify-center`}
         >
-          <span className={tw`z-10`}>{date.day}</span>
+          <span className={tw`z-10 h-[40px] w-[40px] flex items-center justify-center`}>{date.day}</span>
         </div>
       </span>
     </td>

@@ -17,7 +17,7 @@ export const CalendarGrid = ({ state, startDate, ...props }: GridProps) => {
   const weeksInMonth = getWeeksInMonth(startDate, locale)
 
   return (
-    <table {...gridProps} className={tw`table-fixed text-center w-full max-w-[328px] min-w-[280px] border-spacing-0 border-collapse`}>
+    <table {...gridProps} className={tw`table-fixed text-center w-full max-w-[328px] border-spacing-0 border-collapse`}>
       <thead {...headerProps}>
         <tr>
           {weekDays.map((day, index) => (

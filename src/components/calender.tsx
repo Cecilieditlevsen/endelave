@@ -1,21 +1,11 @@
-import {
-  AriaCalendarProps,
-  useCalendar,
-  useDateFormatter,
-  useLocale,
-} from 'react-aria'
-import { useCalendarState } from 'react-stately'
-import {
-  CalendarDate,
-  createCalendar,
-  getLocalTimeZone,
-  today,
-} from '@internationalized/date'
-import { Button } from './button'
-import { CalendarGrid } from './calender-grid'
-import { DateValue } from '@react-types/calendar'
-import { tw } from 'twind'
-import { ArrowLeft, ArrowRight } from './icons/arrow-right'
+import {AriaCalendarProps, useCalendar, useDateFormatter, useLocale,} from 'react-aria'
+import {useCalendarState} from 'react-stately'
+import {createCalendar,} from '@internationalized/date'
+import {Button} from './button'
+import {CalendarGrid} from './calender-grid'
+import {DateValue} from '@react-types/calendar'
+import {tw} from 'twind'
+import {ArrowLeft, ArrowRight} from './icons/arrow-right'
 
 export function Calendar<T extends DateValue>({
   minValue,
@@ -24,7 +14,6 @@ export function Calendar<T extends DateValue>({
 }: AriaCalendarProps<T>) {
   const { locale } = useLocale()
 
-  // @ts-ignore
   const state = useCalendarState({
     ...props,
     createCalendar,

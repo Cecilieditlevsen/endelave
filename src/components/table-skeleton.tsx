@@ -1,5 +1,4 @@
 import { tw } from 'twind'
-import { ArrowRight } from './icons/arrow-right'
 
 export const TableSkeleton = () => {
   return (

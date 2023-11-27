@@ -35,7 +35,7 @@ export const FerryComponent = () => {
         ) : loading ? (
           <>
             <div
-              className={tw`border rounded-md border-solid border-2 border-gray-200 bg-white`}
+              className={tw`border rounded-md border-solid border-2 border-gray-200 bg-white min-h-[334px]`}
             >
               <FerryHeader isDirectionHome={false} />
               <TableSkeleton />

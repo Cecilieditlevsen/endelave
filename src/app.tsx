@@ -1,12 +1,10 @@
-import { apply, setup, theme, tw } from 'twind'
-import { FerryComponent } from './components/ferry-component'
-import { css } from 'twind/css'
+import {setup, tw} from 'twind'
+import {FerryComponent} from './components/ferry-component'
 
 /**
  * Setup Twind
  */
 setup({
-  preflight: true,
   hash: true,
   theme: {
     extend: {
