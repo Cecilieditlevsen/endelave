@@ -6,6 +6,21 @@ This project addresses the specific needs for a commune, which sought to enhance
 
 
 Live Demo: https://ferry-departures.vercel.app/ 
+
+
+## Technologies used
+
+The project utilizes the following technologies:
+
+`Vite`: Vite is a fast and lightweight build tool that optimizes the development experience for modern web applications. It enables quick bundling and reloading of modules, resulting in shorter build times and faster development cycles.
+
+`TypeScript`: TypeScript enhances code maintainability and reliability.
+
+`Twind`: Twind is employed as the css-in-js solution, allowing for encapsulated styling and avoiding conflicts with existing styles upon integration.
+
+`React Aria`: React Aria, a library for building accessible user interfaces in React, has been employed to ensure that the project adheres to web accessibility best practices. 
+
+
 ## Project overview
 
 The primary task involved building a web-accessible React component that would seamlessly integrate within an existing vanilla JavaScript project. This component was specifically developed to address the unique requirements of a commune, which sought to enhance their platform by incorporating an interactive ferry schedule overview between Endelave and Snaptun.
@@ -54,14 +69,3 @@ The React component was implemented using React Aria to ensure web accessibility
 `modules`: The modules directory serves as a dedicated location for organizing code related to different modules or features within the project. It includes models that describe the structure and attributes of a ferry departure.
 
 
-## Technologies used
-
-The project utilizes the following technologies:
-
-`Vite`: Vite is a fast and lightweight build tool that optimizes the development experience for modern web applications. It enables quick bundling and reloading of modules, resulting in shorter build times and faster development cycles.
-
-`TypeScript`: TypeScript enhances code maintainability and reliability.
-
-`Twind`: Twind is employed as the css-in-js solution, allowing for encapsulated styling and avoiding conflicts with existing styles upon integration.
-
-`React Aria`: React Aria, a library for building accessible user interfaces in React, has been employed to ensure that the project adheres to web accessibility best practices. 
