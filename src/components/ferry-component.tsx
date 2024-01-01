@@ -3,16 +3,11 @@ import { Table } from './table'
 import { tw } from 'twind'
 import { getLocalTimeZone, today } from '@internationalized/date'
 import { useFerryDepartures } from '../hooks/use-ferry-departures'
-import { useEffect } from 'react'
 import { TableSkeleton } from './table-skeleton'
 import { FerryHeader } from './ferry-header'
 
 export const FerryComponent = () => {
   const { fetcher, loading, error, data } = useFerryDepartures()
-
-  useEffect(() => {
-    fetcher(today(getLocalTimeZone()))
-  }, [])
 
   return (
     <div className={tw`flex flex-col gap-6 lg:flex-row items-start w-full`}>
@@ -26,6 +21,7 @@ export const FerryComponent = () => {
         {data ? (
           data.ferryRoutes.map((route) => (
             <div
+              key={route.crossingName}
               className={tw`border-solid border-2 border-gray-200 rounded-md bg-white`}
             >
               <FerryHeader isDirectionHome={route.isDirectionHome} />

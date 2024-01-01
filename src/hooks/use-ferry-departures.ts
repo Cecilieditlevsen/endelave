@@ -1,5 +1,5 @@
-import { DateValue } from '@internationalized/date'
-import { useCallback, useState } from 'react'
+import { DateValue, getLocalTimeZone, today } from '@internationalized/date'
+import { useCallback, useEffect, useState } from 'react'
 import { FerryRoutesModel } from '../modules/ferry-departues/models/departure/departure.model'
 import { getFerryDepartures } from '../api/get-ferry-departures'
 
@@ -21,6 +21,12 @@ export const useFerryDepartures = () => {
     } finally {
       setLoading(false)
     }
+  }, [])
+
+  useEffect(() => {
+    ;(async () => {
+      await fetcher(today(getLocalTimeZone()))
+    })()
   }, [])
 
   return {

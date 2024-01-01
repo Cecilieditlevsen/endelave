@@ -26,7 +26,7 @@ export function Calendar<T extends DateValue>({
     state
   )
 
-  const currentMonth = state.visibleRange.start
+  const currentDate = state.visibleRange.start
 
   const monthDateFormatter = useDateFormatter({
     month: 'long',
@@ -41,7 +41,7 @@ export function Calendar<T extends DateValue>({
         </Button>
 
         <h2 className={tw`text-lg font-bold`}>
-          {monthDateFormatter.format(currentMonth.toDate(state.timeZone))}
+          {monthDateFormatter.format(currentDate.toDate(state.timeZone))}
         </h2>
 
         <Button {...nextButtonProps}>
@@ -49,7 +49,7 @@ export function Calendar<T extends DateValue>({
         </Button>
       </div>
 
-      <CalendarGrid startDate={currentMonth} state={state} />
+      <CalendarGrid startDate={currentDate} state={state} />
     </div>
   )
 }
