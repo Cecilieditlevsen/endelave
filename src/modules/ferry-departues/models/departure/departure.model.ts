@@ -25,5 +25,4 @@ export const ferryRoutesSchema = z.object({
 })
 
 export type FerryRouteModel = z.infer<typeof ferryRouteSchema>
-export type DepartureModel = z.infer<typeof departureSchema>
 export type FerryRoutesModel = z.infer<typeof ferryRoutesSchema>
